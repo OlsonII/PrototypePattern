@@ -1,9 +1,11 @@
-﻿namespace Domain
+﻿using System;
+
+namespace Domain
 {
-    public class Soldier : IClonable
+    public class Soldier : ICloneable
     {
         public string Range { get; set; }
-        public Weapon Weapon { get; set; }
+        private Weapon Weapon { get; set; }
 
         public Soldier()
         {
@@ -15,7 +17,7 @@
             Weapon = (Weapon) weapon.Clone();
         }
 
-        public IClonable Clone()
+        public Object Clone()
         {
             return this;
         }

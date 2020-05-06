@@ -6,22 +6,24 @@ namespace Application
 {
     public class PrototypeSoldier
     {
-        private Dictionary<string, Soldier> Prototypes = new Dictionary<string, Soldier>();
+        private readonly Dictionary<string, Soldier> _prototypes = new Dictionary<string, Soldier>();
         
         public PrototypeSoldier()
         {
-            Soldier General = new Soldier(range: "General", weapon: new Weapon(referenceCode: "000", name: "9mm"));
-            Soldier InitialSoldier = new Soldier(range: "Initial", weapon: new Weapon(referenceCode: "000", name: "M16"));
+            var generalWeapon = new Weapon(referenceCode: "000", name: "9mm");
+            var general = new Soldier(range: "General", weapon: (Weapon) generalWeapon.Clone());
+            var initialWeapon = new Weapon(referenceCode: "000", name: "M16");
+            var initialSoldier = new Soldier(range: "Initial", weapon: (Weapon) initialWeapon.Clone());
             
-            Prototypes.Add("General", General);
-            Prototypes.Add("Initial", InitialSoldier);
+            _prototypes.Add("General", general);
+            _prototypes.Add("Initial", initialSoldier);
         }
 
-        public IClonable Prototype(string range)
+        public Soldier Prototype(string range)
         {
-            if (Prototypes.TryGetValue(range, out Soldier soldier))
+            if (_prototypes.TryGetValue(range, out var soldier))
             {
-                return soldier.Clone();
+                return (Soldier) soldier.Clone();
             }
 
             return null;
