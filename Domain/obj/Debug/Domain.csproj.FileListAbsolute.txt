@@ -1,0 +1,6 @@
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\bin\Debug\Domain.dll
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\bin\Debug\Domain.pdb
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\obj\Debug\Domain.dll
+C:\Users\NILSO\RiderProjects\PrototypePattern\Domain\obj\Debug\Domain.pdb

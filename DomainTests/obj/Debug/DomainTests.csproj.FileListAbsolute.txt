@@ -1,0 +1,2 @@
+C:\Users\NILSO\RiderProjects\PrototypePattern\DomainTests\obj\Debug\DomainTests.csprojAssemblyReference.cache
+C:\Users\NILSO\RiderProjects\PrototypePattern\DomainTests\obj\Debug\DomainTests.csproj.CoreCompileInputs.cache
